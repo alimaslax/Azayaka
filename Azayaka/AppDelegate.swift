@@ -162,7 +162,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, SCStreamDelegate, SCStreamOu
 
     func applicationWillTerminate(_ aNotification: Notification) {
         if stream != nil {
-            stopRecording()
         }
     }
 

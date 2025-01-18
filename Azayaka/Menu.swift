@@ -10,6 +10,26 @@ import ServiceManagement
 import KeyboardShortcuts
 
 extension AppDelegate: NSMenuDelegate {
+    @objc func stopRecording() {
+        // TODO: Implement recording stop functionality
+        print("Stop recording called")
+    }
+    @objc func prepRecord() {
+        // TODO: Implement recording stop functionality
+        print("Stop recording called")
+    }
+    @objc func getRecordingSize() -> String {
+        // TODO: Implement recording stop functionality
+        print("Stop recording called")
+        return "00:00"
+    }
+    @objc func getRecordingLength() -> String {
+        // TODO: Implement recording stop functionality
+        print("Stop recording called")
+        return "00:00"
+    }
+    
+    
     func createMenu() {
         menu.removeAllItems()
         menu.delegate = self
@@ -45,6 +65,9 @@ extension AppDelegate: NSMenuDelegate {
             menu.addItem(audio)
             menu.addItem(NSMenuItem.separator())
             menu.addItem(header("Displays".local))
+            menu.addItem(NSMenuItem.separator())
+            menu.addItem(header("Windows".local))
+
             noneAvailable.isHidden = true
             menu.addItem(noneAvailable)
         }

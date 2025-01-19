@@ -82,45 +82,6 @@ extension AppDelegate: NSMenuDelegate {
             info.attributedTitle = NSAttributedString(string: String(format: "Duration: %@\nFile size: %@".local, arguments: [getRecordingLength(), getRecordingSize()]))
         }
     }
-    
-    func getAppIcon(forBundleIdentifier bundleIdentifier: String) -> NSImage? {
-        if let appURL = NSWorkspace.shared.urlForApplication(withBundleIdentifier: bundleIdentifier) {
-            let icon = NSWorkspace.shared.icon(forFile: appURL.path)
-            return icon
-        }
-        return NSImage(systemSymbolName: "questionmark.app.dashed", accessibilityDescription: "application icon".local)
-    }
-    
-    func getScreenWithMouse() -> NSScreen? {
-        let mouseLocation = NSEvent.mouseLocation
-        let screens = NSScreen.screens
-        let screenWithMouse = (screens.first { NSMouseInRect(mouseLocation, $0.frame, false) })
-        return screenWithMouse
-    }
-
-    func getAppNameAttachment(window: SCWindow) -> NSAttributedString {
-        let appID = window.owningApplication?.bundleIdentifier ?? "Unknown App".local
-        let imageAttachment = NSTextAttachment()
-        imageAttachment.image = getAppIcon(forBundleIdentifier: appID)
-        imageAttachment.bounds = CGRectMake(0, -3, 16, 16)
-        let output = NSMutableAttributedString()
-        output.append(NSAttributedString(attachment: imageAttachment))
-        output.append(NSMutableAttributedString(string: " " + (window.owningApplication?.applicationName ?? "Unknown App".local)))
-        return output
-    }
-
-    func getFancyWindowString(window: SCWindow) -> NSAttributedString {
-        let imageAttachment = NSTextAttachment()
-        imageAttachment.image = NSImage(systemSymbolName: "macwindow", accessibilityDescription: "window icon".local)
-        let imageString = NSAttributedString(attachment: imageAttachment)
-
-        let str = NSAttributedString(string: " " + (window.title ?? "No title".local))//, attributes: [.font: NSFont.systemFont(ofSize: 12, weight: .regular), .foregroundColor: NSColor.secondaryLabelColor])
-
-        let output = NSMutableAttributedString()
-        output.append(imageString)
-        output.append(str)
-        return output
-    }
 
     func header(_ title: String, size: CGFloat = 10) -> NSMenuItem {
         let headerItem: NSMenuItem

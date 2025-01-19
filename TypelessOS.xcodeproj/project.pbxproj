@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		170297D52BCD586A0035EB26 /* Updates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updates.swift; sourceTree = "<group>"; };
-		17322D472958D07E00185BB6 /* Azayaka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azayaka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17322D472958D07E00185BB6 /* TypelessOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypelessOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17322D4A2958D07E00185BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17322D4E2958D08000185BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17322D532958D08000185BB6 /* Azayaka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Azayaka.entitlements; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		17322D3E2958D07D00185BB6 = {
 			isa = PBXGroup;
 			children = (
-				17322D492958D07E00185BB6 /* Azayaka */,
+				17322D492958D07E00185BB6 /* TypelessOS */,
 				17322D482958D07E00185BB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +62,12 @@
 		17322D482958D07E00185BB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17322D472958D07E00185BB6 /* Azayaka.app */,
+				17322D472958D07E00185BB6 /* TypelessOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17322D492958D07E00185BB6 /* Azayaka */ = {
+		17322D492958D07E00185BB6 /* TypelessOS */ = {
 			isa = PBXGroup;
 			children = (
 				17322D4A2958D07E00185BB6 /* AppDelegate.swift */,
@@ -84,15 +84,15 @@
 				17322D4E2958D08000185BB6 /* Assets.xcassets */,
 				17322D532958D08000185BB6 /* Azayaka.entitlements */,
 			);
-			path = Azayaka;
+			path = TypelessOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		17322D462958D07E00185BB6 /* Azayaka */ = {
+		17322D462958D07E00185BB6 /* TypelessOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17322D562958D08000185BB6 /* Build configuration list for PBXNativeTarget "Azayaka" */;
+			buildConfigurationList = 17322D562958D08000185BB6 /* Build configuration list for PBXNativeTarget "TypelessOS" */;
 			buildPhases = (
 				17322D432958D07E00185BB6 /* Sources */,
 				17322D442958D07E00185BB6 /* Frameworks */,
@@ -102,12 +102,12 @@
 			);
 			dependencies = (
 			);
-			name = Azayaka;
+			name = TypelessOS;
 			packageProductDependencies = (
 				175E293F2BD2C94D00EB9F4C /* KeyboardShortcuts */,
 			);
 			productName = Yamabiko;
-			productReference = 17322D472958D07E00185BB6 /* Azayaka.app */;
+			productReference = 17322D472958D07E00185BB6 /* TypelessOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 17322D422958D07D00185BB6 /* Build configuration list for PBXProject "Azayaka" */;
+			buildConfigurationList = 17322D422958D07D00185BB6 /* Build configuration list for PBXProject "TypelessOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17322D462958D07E00185BB6 /* Azayaka */,
+				17322D462958D07E00185BB6 /* TypelessOS */,
 			);
 		};
 /* End PBXProject section */
@@ -309,7 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Azayaka/Azayaka.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TypelessOS/Azayaka.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -319,7 +319,7 @@
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Azayaka;
+				INFOPLIST_KEY_CFBundleDisplayName = TypelessOS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -346,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Azayaka/Azayaka.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TypelessOS/Azayaka.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -356,7 +356,7 @@
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Azayaka;
+				INFOPLIST_KEY_CFBundleDisplayName = TypelessOS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -381,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17322D422958D07D00185BB6 /* Build configuration list for PBXProject "Azayaka" */ = {
+		17322D422958D07D00185BB6 /* Build configuration list for PBXProject "TypelessOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17322D542958D08000185BB6 /* Debug */,
@@ -390,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17322D562958D08000185BB6 /* Build configuration list for PBXNativeTarget "Azayaka" */ = {
+		17322D562958D08000185BB6 /* Build configuration list for PBXNativeTarget "TypelessOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17322D572958D08000185BB6 /* Debug */,

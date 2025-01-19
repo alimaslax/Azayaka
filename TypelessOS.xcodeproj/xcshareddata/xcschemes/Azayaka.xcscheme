@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "17322D462958D07E00185BB6"
-               BuildableName = "Azayaka.app"
-               BlueprintName = "Azayaka"
-               ReferencedContainer = "container:Azayaka.xcodeproj">
+               BuildableName = "TypelessOS.app"
+               BlueprintName = "TypelessOS"
+               ReferencedContainer = "container:TypelessOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "17322D462958D07E00185BB6"
-            BuildableName = "Azayaka.app"
-            BlueprintName = "Azayaka"
-            ReferencedContainer = "container:Azayaka.xcodeproj">
+            BuildableName = "TypelessOS.app"
+            BlueprintName = "TypelessOS"
+            ReferencedContainer = "container:TypelessOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "17322D462958D07E00185BB6"
-            BuildableName = "Azayaka.app"
-            BlueprintName = "Azayaka"
-            ReferencedContainer = "container:Azayaka.xcodeproj">
+            BuildableName = "TypelessOS.app"
+            BlueprintName = "TypelessOS"
+            ReferencedContainer = "container:TypelessOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

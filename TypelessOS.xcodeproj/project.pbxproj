@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,13 @@
 		17BCDC80295BAC9400448A97 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCDC7F295BAC9300448A97 /* Types.swift */; };
 		17DBD7C5295B0973005C0690 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DBD7C4295B0973005C0690 /* Preferences.swift */; };
 		18B09ABC2BCBA40B005CDC4E /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B09ABB2BCBA40B005CDC4E /* MenuBar.swift */; };
+		24E199B42D3CAF47006FC260 /* RiffWaveUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E199B12D3CAF47006FC260 /* RiffWaveUtils.swift */; };
+		24E199B82D3CAF47006FC260 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E199B02D3CAF47006FC260 /* Recorder.swift */; };
+		24E199BB2D3CAF69006FC260 /* WhisperState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E199B92D3CAF69006FC260 /* WhisperState.swift */; };
+		24E199C32D3CB075006FC260 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E199BD2D3CB075006FC260 /* ggml.c */; };
+		24E199C42D3CB075006FC260 /* whisper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24E199C02D3CB075006FC260 /* whisper.cpp */; };
+		24E199CA2D3CB1DD006FC260 /* ggml-base.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 24E1999C2D3CAF14006FC260 /* ggml-base.en.bin */; };
+		24E199CF2D3CB2DF006FC260 /* LibWhisper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E199BE2D3CB075006FC260 /* LibWhisper.swift */; };
 		7B2603882C0850CD00C47D89 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2603872C0850CD00C47D89 /* Countdown.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +43,27 @@
 		17BCDC7F295BAC9300448A97 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		17DBD7C4295B0973005C0690 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		18B09ABB2BCBA40B005CDC4E /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		24E1999C2D3CAF14006FC260 /* ggml-base.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-base.en.bin"; sourceTree = "<group>"; };
+		24E1999F2D3CAF14006FC260 /* bbc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bbc.json; sourceTree = "<group>"; };
+		24E199A02D3CAF14006FC260 /* bbc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bbc.mp3; sourceTree = "<group>"; };
+		24E199A12D3CAF14006FC260 /* bbc.srt */ = {isa = PBXFileReference; lastKnownFileType = text; path = bbc.srt; sourceTree = "<group>"; };
+		24E199A22D3CAF14006FC260 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		24E199A32D3CAF14006FC260 /* jfk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jfk.wav; sourceTree = "<group>"; };
+		24E199B02D3CAF47006FC260 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		24E199B12D3CAF47006FC260 /* RiffWaveUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiffWaveUtils.swift; sourceTree = "<group>"; };
+		24E199B92D3CAF69006FC260 /* WhisperState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperState.swift; sourceTree = "<group>"; };
+		24E199BC2D3CB075006FC260 /* ggml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggml.h; sourceTree = "<group>"; };
+		24E199BD2D3CB075006FC260 /* ggml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ggml.c; sourceTree = "<group>"; };
+		24E199BE2D3CB075006FC260 /* LibWhisper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibWhisper.swift; sourceTree = "<group>"; };
+		24E199BF2D3CB075006FC260 /* whisper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whisper.h; sourceTree = "<group>"; };
+		24E199C02D3CB075006FC260 /* whisper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = whisper.cpp; sourceTree = "<group>"; };
+		24E199C12D3CB075006FC260 /* WhisperCpp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhisperCpp-Bridging-Header.h"; sourceTree = "<group>"; };
 		7B2603872C0850CD00C47D89 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		24E199CB2D3CB264006FC260 /* UI */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UI; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		17322D442958D07E00185BB6 /* Frameworks */ = {
@@ -54,6 +80,8 @@
 		17322D3E2958D07D00185BB6 = {
 			isa = PBXGroup;
 			children = (
+				24E199CB2D3CB264006FC260 /* UI */,
+				24E199C22D3CB075006FC260 /* whisper.cpp.swift */,
 				17322D492958D07E00185BB6 /* TypelessOS */,
 				17322D482958D07E00185BB6 /* Products */,
 			);
@@ -70,6 +98,9 @@
 		17322D492958D07E00185BB6 /* TypelessOS */ = {
 			isa = PBXGroup;
 			children = (
+				24E199BA2D3CAF69006FC260 /* Models */,
+				24E199B32D3CAF47006FC260 /* Utils */,
+				24E199A52D3CAF14006FC260 /* Resources */,
 				17322D4A2958D07E00185BB6 /* AppDelegate.swift */,
 				17BCDC7F295BAC9300448A97 /* Types.swift */,
 				17322D5D295929A000185BB6 /* Menu.swift */,
@@ -85,6 +116,65 @@
 				17322D532958D08000185BB6 /* TypelessOS.entitlements */,
 			);
 			path = TypelessOS;
+			sourceTree = "<group>";
+		};
+		24E1999D2D3CAF14006FC260 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				24E1999C2D3CAF14006FC260 /* ggml-base.en.bin */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		24E199A42D3CAF14006FC260 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				24E1999F2D3CAF14006FC260 /* bbc.json */,
+				24E199A02D3CAF14006FC260 /* bbc.mp3 */,
+				24E199A12D3CAF14006FC260 /* bbc.srt */,
+				24E199A22D3CAF14006FC260 /* image.png */,
+				24E199A32D3CAF14006FC260 /* jfk.wav */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		24E199A52D3CAF14006FC260 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24E1999D2D3CAF14006FC260 /* models */,
+				24E199A42D3CAF14006FC260 /* samples */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24E199B32D3CAF47006FC260 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				24E199B02D3CAF47006FC260 /* Recorder.swift */,
+				24E199B12D3CAF47006FC260 /* RiffWaveUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		24E199BA2D3CAF69006FC260 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24E199B92D3CAF69006FC260 /* WhisperState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24E199C22D3CB075006FC260 /* whisper.cpp.swift */ = {
+			isa = PBXGroup;
+			children = (
+				24E199BC2D3CB075006FC260 /* ggml.h */,
+				24E199BD2D3CB075006FC260 /* ggml.c */,
+				24E199BE2D3CB075006FC260 /* LibWhisper.swift */,
+				24E199BF2D3CB075006FC260 /* whisper.h */,
+				24E199C02D3CB075006FC260 /* whisper.cpp */,
+				24E199C12D3CB075006FC260 /* WhisperCpp-Bridging-Header.h */,
+			);
+			path = whisper.cpp.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E199CA2D3CB1DD006FC260 /* ggml-base.en.bin in Resources */,
 				17322D4F2958D08000185BB6 /* Assets.xcassets in Resources */,
 				17A92A4B2C9383190059E616 /* Localizable.xcstrings in Resources */,
 			);
@@ -165,11 +256,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E199CF2D3CB2DF006FC260 /* LibWhisper.swift in Sources */,
+				24E199BB2D3CAF69006FC260 /* WhisperState.swift in Sources */,
 				17322D5A2959286100185BB6 /* Processing.swift in Sources */,
 				17DBD7C5295B0973005C0690 /* Preferences.swift in Sources */,
 				17BCDC80295BAC9400448A97 /* Types.swift in Sources */,
 				17322D4B2958D07E00185BB6 /* AppDelegate.swift in Sources */,
 				17606AED2C694FE0008A064E /* Shortcuts.swift in Sources */,
+				24E199B42D3CAF47006FC260 /* RiffWaveUtils.swift in Sources */,
+				24E199C32D3CB075006FC260 /* ggml.c in Sources */,
+				24E199C42D3CB075006FC260 /* whisper.cpp in Sources */,
+				24E199B82D3CAF47006FC260 /* Recorder.swift in Sources */,
 				17322D5C295928BE00185BB6 /* Recording.swift in Sources */,
 				7B2603882C0850CD00C47D89 /* Countdown.swift in Sources */,
 				18B09ABC2BCBA40B005CDC4E /* MenuBar.swift in Sources */,
@@ -337,6 +434,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "whisper.cpp.swift/WhisperCpp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -374,6 +472,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "whisper.cpp.swift/WhisperCpp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

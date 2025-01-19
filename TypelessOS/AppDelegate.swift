@@ -13,6 +13,8 @@ import ScreenCaptureKit
 import UserNotifications
 import SwiftUI
 
+
+
 @main
 struct TypelessOS: App {
     @StateObject private var appState = AppState()
@@ -24,6 +26,16 @@ struct TypelessOS: App {
                 .fixedSize()
         }
     }
+}
+
+class TypeLessState: ObservableObject {
+    @Published var isOpen = true
+    @Published var isRec = false
+    @Published var isResizing = false
+    @Published var input = ""
+    @Published var appWidth = CGFloat(500)
+    @Published var appHeight = CGFloat(500)
+    @Published var mousePosition: CGPoint = CGPoint(x: 0.0, y: 0.0)
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate, SCStreamDelegate, SCStreamOutput {

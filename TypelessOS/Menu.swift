@@ -1,6 +1,6 @@
 //
 //  Menu.swift
-//  Azayaka
+//  TypelessOS
 //
 //  Created by Martin Persson on 2022-12-26.
 //
@@ -100,7 +100,7 @@ extension AppDelegate: NSMenuDelegate {
             menu.addItem(updateNotice)
         }
         menu.addItem(NSMenuItem(title: "Preferences…".local, action: #selector(openPreferences), keyEquivalent: ","))
-        menu.addItem(NSMenuItem(title: "Quit Azayaka".local, action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        menu.addItem(NSMenuItem(title: "Quit TypelessOS".local, action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
     }
 
     func menuWillOpen(_ menu: NSMenu) {
@@ -121,7 +121,7 @@ extension AppDelegate: NSMenuDelegate {
             iconView.frame = NSRect(x: 0, y: 1, width: self.streamType != nil ? 72 : 33, height: 20)
             button.subviews = [iconView]
             button.frame = iconView.frame
-            button.setAccessibilityLabel("Azayaka")
+            button.setAccessibilityLabel("TypelessOS")
         }
     }
 

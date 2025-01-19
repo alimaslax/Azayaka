@@ -1,6 +1,6 @@
 //
 //  Preferences.swift
-//  Azayaka
+//  TypelessOS
 //
 //  Created by Martin Persson on 2022-12-27.
 //
@@ -135,7 +135,7 @@ struct Preferences: View {
                             .font(.footnote).foregroundColor(Color.gray)
                     }
                     Toggle(isOn: $hideSelf) {
-                        Text("Exclude Azayaka itself")
+                        Text("Exclude TypelessOS itself")
                     }
                     Toggle(isOn: $frontApp) {
                         Text("Only list focused app's windows")
@@ -217,8 +217,8 @@ struct Preferences: View {
             recordMic = false
             DispatchQueue.main.async {
                 let alert = NSAlert()
-                alert.messageText = "Azayaka needs permissions!".local
-                alert.informativeText = "Azayaka needs permission to record your microphone to do this.".local
+                alert.messageText = "TypelessOS needs permissions!".local
+                alert.informativeText = "TypelessOS needs permission to record your microphone to do this.".local
                 alert.addButton(withTitle: "Open Settings".local)
                 alert.addButton(withTitle: "No thanks".local)
                 alert.alertStyle = .warning
@@ -348,7 +348,7 @@ struct Preferences: View {
                             Text("Check for updates at launch")
                         }
                     }.padding([.top, .leading, .trailing], 10).frame(width: 250)
-                    Text("Azayaka will check [GitHub](https://github.com/Mnpn/Azayaka/releases) for new updates.")
+                    Text("TypelessOS will check [GitHub](https://github.com/Mnpn/TypelessOS/releases) for new updates.")
                         .font(.footnote).foregroundColor(Color.gray).frame(maxWidth: .infinity).padding([.bottom, .leading, .trailing], 10)
                 }.padding([.top, .leading, .trailing], 10)
                 GroupBox {
@@ -369,7 +369,7 @@ struct Preferences: View {
                                 Text("Use system recorder")
                             }
                         }.padding([.top, .leading, .trailing], 10)
-                        Text("Since macOS Sequoia, Azayaka can use Apple's provided recorder instead of its own. Try it if Azayaka's recorder has issues for you.\n- It has a fixed audio quality of 128Kbps AAC.\n- Audio-only recordings will always use Azayaka's recorder regardless of this setting.")
+                        Text("Since macOS Sequoia, TypelessOS can use Apple's provided recorder instead of its own. Try it if TypelessOS's recorder has issues for you.\n- It has a fixed audio quality of 128Kbps AAC.\n- Audio-only recordings will always use TypelessOS's recorder regardless of this setting.")
                             .font(.footnote).foregroundColor(Color.gray).frame(maxWidth: .infinity).padding([.bottom, .leading, .trailing], 10)
                     } else {
                         VStack(alignment: .leading) {
@@ -377,12 +377,12 @@ struct Preferences: View {
                                 Text("Use system recorder")
                             }.disabled(true)
                         }.padding([.top, .leading, .trailing], 10)
-                        Text("Using Apple's recorder instead of Azayaka's own requires macOS Sequoia or newer.")
+                        Text("Using Apple's recorder instead of TypelessOS's own requires macOS Sequoia or newer.")
                             .font(.footnote).foregroundColor(Color.gray).frame(maxWidth: .infinity).padding([.bottom, .leading, .trailing], 10)
                     }
                 }.padding([.leading, .trailing], 10)
                 HStack {
-                    Text("Azayaka \(getVersion()) (\(getBuild()))").foregroundColor(Color.secondary)
+                    Text("TypelessOS \(getVersion()) (\(getBuild()))").foregroundColor(Color.secondary)
                     Spacer()
                     Text("https://mnpn.dev")
                 }.padding(12).background { VisualEffectView() }.frame(height: 42)

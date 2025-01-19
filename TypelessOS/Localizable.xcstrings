@@ -168,98 +168,98 @@
         }
       }
     },
-    "Azayaka %@ (%@)" : {
+    "TypelessOS %@ (%@)" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Azayaka %1$@ (%2$@)"
+            "value" : "TypelessOS %1$@ (%2$@)"
           }
         }
       },
       "shouldTranslate" : false
     },
-    "Azayaka needs permission to record your microphone to do this." : {
+    "TypelessOS needs permission to record your microphone to do this." : {
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka behöver tillstånd för att spela in din mikrofon för att göra detta."
+            "value" : "TypelessOS behöver tillstånd för att spela in din mikrofon för att göra detta."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka 需要使用麦克风权限来录制麦克风声音."
+            "value" : "TypelessOS 需要使用麦克风权限来录制麦克风声音."
           }
         }
       }
     },
-    "Azayaka needs permissions!" : {
+    "TypelessOS needs permissions!" : {
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka behöver åtkomst!"
+            "value" : "TypelessOS behöver åtkomst!"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "请为 Azayaka 授权"
+            "value" : "请为 TypelessOS 授权"
           }
         }
       }
     },
-    "Azayaka needs screen recording permissions, even if you only intend on recording audio." : {
+    "TypelessOS needs screen recording permissions, even if you only intend on recording audio." : {
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka behöver skärminspelningstillstånd, även om du bara tänker spela in ljud."
+            "value" : "TypelessOS behöver skärminspelningstillstånd, även om du bara tänker spela in ljud."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka 需要使用录屏权限\n(即使只是用来录制音频)"
+            "value" : "TypelessOS 需要使用录屏权限\n(即使只是用来录制音频)"
           }
         }
       }
     },
-    "Azayaka requires screen recording permissions." : {
+    "TypelessOS requires screen recording permissions." : {
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka kräver skärminspelningstillstånd."
+            "value" : "TypelessOS kräver skärminspelningstillstånd."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka 需要使用录屏权限"
+            "value" : "TypelessOS 需要使用录屏权限"
           }
         }
       }
     },
-    "Azayaka will check [GitHub](https://github.com/Mnpn/Azayaka/releases) for new updates." : {
+    "TypelessOS will check [GitHub](https://github.com/Mnpn/TypelessOS/releases) for new updates." : {
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka kommer att kolla [GitHub](https://github.com/Mnpn/Azayaka/releases) efter uppdateringar."
+            "value" : "TypelessOS kommer att kolla [GitHub](https://github.com/Mnpn/TypelessOS/releases) efter uppdateringar."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Azayaka会从 [GitHub](https://github.com/Mnpn/Azayaka/releases) 检查更新"
+            "value" : "Azayaka会从 [GitHub](https://github.com/Mnpn/TypelessOS/releases) 检查更新"
           }
         }
       }
@@ -314,7 +314,7 @@
         }
       }
     },
-    "Couldn't start the recording:\n“%@”\n\nIt is possible that the recording settings, such as HDR or the encoder, are not compatible with your device.\n\nPlease check Azayaka's preferences." : {
+    "Couldn't start the recording:\n“%@”\n\nIt is possible that the recording settings, such as HDR or the encoder, are not compatible with your device.\n\nPlease check TypelessOS's preferences." : {
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
@@ -490,20 +490,20 @@
         }
       }
     },
-    "Exclude Azayaka itself" : {
-      "comment" : "\"Do not show Azayaka in the video recording's output file\"",
+    "Exclude TypelessOS itself" : {
+      "comment" : "\"Do not show TypelessOS in the video recording's output file\"",
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Exkludera Azayaka"
+            "value" : "Exkludera TypelessOS"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "从画面中排除 Azayaka 本身"
+            "value" : "从画面中排除 TypelessOS 本身"
           }
         }
       }
@@ -1008,13 +1008,13 @@
         }
       }
     },
-    "Quit Azayaka" : {
+    "Quit TypelessOS" : {
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Avsluta Azayaka"
+            "value" : "Avsluta TypelessOS"
           }
         },
         "zh-Hans" : {
@@ -1266,23 +1266,23 @@
         }
       }
     },
-    "Since macOS Sequoia, Azayaka can use Apple's provided recorder instead of its own. Try it if Azayaka's recorder has issues for you.\n- It has a fixed audio quality of 128Kbps AAC.\n- Audio-only recordings will always use Azayaka's recorder regardless of this setting." : {
+    "Since macOS Sequoia, TypelessOS can use Apple's provided recorder instead of its own. Try it if TypelessOS's recorder has issues for you.\n- It has a fixed audio quality of 128Kbps AAC.\n- Audio-only recordings will always use TypelessOS's recorder regardless of this setting." : {
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sedan macOS Sequoia kan Azayaka använda Apples inspelare istället för sin egna. Välj detta om du har problem med Azayakas egna inspelare.\n- Den har en låst ljudkvalitet, 128Kbps AAC.\n- Systemljudsinspelningar kommer alltid att använda Azayakas inspelare oavsett."
+            "value" : "Sedan macOS Sequoia kan TypelessOS använda Apples inspelare istället för sin egna. Välj detta om du har problem med Azayakas egna inspelare.\n- Den har en låst ljudkvalitet, 128Kbps AAC.\n- Systemljudsinspelningar kommer alltid att använda Azayakas inspelare oavsett."
           }
         }
       }
     },
-    "Since macOS Sequoia, Azayaka can use Apple's provided recorder. Select this if you want Azayaka to use its own recorder instead." : {
+    "Since macOS Sequoia, TypelessOS can use Apple's provided recorder. Select this if you want TypelessOS to use its own recorder instead." : {
       "extractionState" : "manual",
       "localizations" : {
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sedan macOS Sequoia kan Azayaka använda Apples inspelare. Välj detta om du vill att Azayaka ska använda sin egna inspelare istället."
+            "value" : "Sedan macOS Sequoia kan TypelessOS använda Apples inspelare. Välj detta om du vill att TypelessOS ska använda sin egna inspelare istället."
           }
         }
       }
@@ -1427,7 +1427,7 @@
         }
       }
     },
-    "Using Apple's recorder instead of Azayaka's own requires macOS Sequoia or newer." : {
+    "Using Apple's recorder instead of TypelessOS's own requires macOS Sequoia or newer." : {
       "localizations" : {
         "sv" : {
           "stringUnit" : {

@@ -1,6 +1,6 @@
 //
 //  MenuBar.swift
-//  Azayaka
+//  TypelessOS
 //
 //  Created by apple on 2024/4/14.
 //

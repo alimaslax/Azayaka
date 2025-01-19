@@ -1,6 +1,6 @@
 //
 //  Countdown.swift
-//  Azayaka
+//  TypelessOS
 //
 //  Created by resistanceto on 2024/5/30.
 //

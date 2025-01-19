@@ -1,6 +1,6 @@
 //
 //  Shortcuts.swift
-//  Azayaka
+//  TypelessOS
 //
 //  Created by Martin Persson on 2024-08-11.
 //

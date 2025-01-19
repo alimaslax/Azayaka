@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Azayaka
+//  TypelessOS
 //
 //  Created by Martin Persson on 2022-12-25.
 //
@@ -14,7 +14,7 @@ import UserNotifications
 import SwiftUI
 
 @main
-struct Azayaka: App {
+struct TypelessOS: App {
     @StateObject private var appState = AppState()
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
@@ -39,7 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SCStreamDelegate, SCStreamOu
     var window: SCWindow?
     var streamType: StreamType?
 
-    let excludedWindows = ["com.apple.dock", "com.apple.controlcenter", "com.apple.notificationcenterui", "com.apple.systemuiserver", "com.apple.WindowManager", "dev.mnpn.Azayaka", "com.gaosun.eul", "com.pointum.hazeover", "net.matthewpalmer.Vanilla", "com.dwarvesv.minimalbar", "com.bjango.istatmenus.status"]
+    let excludedWindows = ["com.apple.dock", "com.apple.controlcenter", "com.apple.notificationcenterui", "com.apple.systemuiserver", "com.apple.WindowManager", "dev.mnpn.TypelessOS", "com.gaosun.eul", "com.pointum.hazeover", "net.matthewpalmer.Vanilla", "com.dwarvesv.minimalbar", "com.bjango.istatmenus.status"]
 
     var statusItem: NSStatusItem!
     var menu = NSMenu()
@@ -111,7 +111,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SCStreamDelegate, SCStreamOu
             let infoItem = NSMenuItem()
             switch error {
                 case SCStreamError.userDeclined:
-                    infoItem.title = "Azayaka requires screen recording permissions.".local
+                    infoItem.title = "TypelessOS requires screen recording permissions.".local
                     requestPermissions()
                 default:
                     print("Failed to fetch available content: ".local, error.localizedDescription)
@@ -120,7 +120,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SCStreamDelegate, SCStreamOu
             infoMenu.addItem(infoItem)
             infoMenu.addItem(NSMenuItem.separator())
             infoMenu.addItem(NSMenuItem(title: "Preferences…".local, action: #selector(openPreferences), keyEquivalent: ","))
-            infoMenu.addItem(NSMenuItem(title: "Quit Azayaka".local, action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+            infoMenu.addItem(NSMenuItem(title: "Quit TypelessOS".local, action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
             statusItem.menu = infoMenu
             return false
         }
@@ -139,8 +139,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, SCStreamDelegate, SCStreamOu
         allowShortcuts(false)
         DispatchQueue.main.async {
             let alert = NSAlert()
-            alert.messageText = "Azayaka needs permissions!".local
-            alert.informativeText = "Azayaka needs screen recording permissions, even if you only intend on recording audio.".local
+            alert.messageText = "TypelessOS needs permissions!".local
+            alert.informativeText = "TypelessOS needs screen recording permissions, even if you only intend on recording audio.".local
             alert.addButton(withTitle: "Open Settings".local)
             alert.addButton(withTitle: "Okay".local)
             alert.addButton(withTitle: "No thanks, quit".local)

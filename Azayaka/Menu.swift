@@ -98,34 +98,6 @@ extension AppDelegate: NSMenuDelegate {
         return screenWithMouse
     }
 
-    func newWindow(window: SCWindow) {
-        let appName = window.owningApplication?.applicationName ?? "Unknown App".local
-        let appBundleIdentifier = window.owningApplication?.bundleIdentifier ?? "Unknown App".local
-        let subMenuItem = NSMenuItem(title: "Unknown".local, action: #selector(prepRecord), keyEquivalent: "")
-        subMenuItem.attributedTitle = getFancyWindowString(window: window)
-        subMenuItem.title = String(window.windowID)
-        subMenuItem.identifier = NSUserInterfaceItemIdentifier("window")
-        subMenuItem.setAccessibilityLabel(String(format: "Window title: %@".local, (window.title ?? "No title".local))) // VoiceOver will otherwise read the window ID (the item's non-attributed title)
-
-        if let item = menu.items.first(where: { ($0.title == appBundleIdentifier) && $0.identifier?.rawValue ?? "" == "application" }) {
-            item.submenu?.addItem(subMenuItem)
-        } else {
-            if !ud.bool(forKey: Preferences.kFrontApp) {
-                let app = NSMenuItem(title: "Unknown".local, action: nil, keyEquivalent: "")
-                app.attributedTitle = getAppNameAttachment(window: window)
-                app.title = appBundleIdentifier // if the title isn't placed after the attributed, getting the title will return the attributedTitle
-                app.identifier = NSUserInterfaceItemIdentifier("application")
-                app.setAccessibilityLabel(String(format: "App name: %@".local, appName)) // VoiceOver will otherwise read the app bundle identifier (the item's non-attributed title)
-                let subMenu = NSMenu()
-                subMenu.addItem(subMenuItem)
-                app.submenu = subMenu
-                menu.insertItem(app, at: menu.numberOfItems - 4)
-            } else {
-                menu.insertItem(subMenuItem, at: menu.numberOfItems - 4)
-            }
-        }
-    }
-
     func getAppNameAttachment(window: SCWindow) -> NSAttributedString {
         let appID = window.owningApplication?.bundleIdentifier ?? "Unknown App".local
         let imageAttachment = NSTextAttachment()
